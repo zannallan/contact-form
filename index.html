@@ -14,18 +14,18 @@
     <div class="max-length">
       <h1>Send us a sweet little note</h1>
 
-      <form class="push-0">
+      <form class="push-0" method="POST" action="https://formspree.io/bradlet@algonquincollege.com">
         <div class="push">
           <label for="name">Name</label>
-          <input id="name">
+          <input id="name" name="name" required>
         </div>
         <div class="push">
           <label for="email">Your Email</label>
-          <input id="email" type="email" placeholder="me@me.com">
+          <input id="email" type="email" placeholder="me@me.com" name="email" required>
         </div>
         <div class="push">
           <label for="subject">Subject</label>
-          <select id="subject">
+          <select id="subject" name="_subject">
             <option>Get a quote!</option>
             <option>General question</option>
             <option>Just a talk</option>
@@ -33,7 +33,7 @@
         </div>
         <div class="push">
           <label for="details">What's up?</label>
-          <textarea id="details"></textarea>
+          <textarea id="details" name="message" required></textarea>
         </div>
         <div>
           <button class="btn btn-light mega" type="submit">Send Message</button>
